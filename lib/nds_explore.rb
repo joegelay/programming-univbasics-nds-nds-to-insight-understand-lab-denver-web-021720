@@ -11,18 +11,18 @@ end
 
 def print_first_directors_movie_titles
   
+  # spielberg_movies is an array of Spielberg's movies (hashes)...
   spielberg_movies = directors_database[0][:movies]
   # puts spielberg_movies
   
+  # loop outputs title of each movie hash 
   counter = 0
-  
   while counter < spielberg_movies.length do
     puts spielberg_movies[counter][:title]
     
     counter += 1 
     
   end
-  
 end
 
 print_first_directors_movie_titles
